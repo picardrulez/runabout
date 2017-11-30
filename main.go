@@ -14,7 +14,6 @@ func main() {
 		url = "http://" + url
 	}
 
-	fmt.Println(url)
 	resp, err := http.Get(url)
 	if (err == nil) && (resp.StatusCode == 200) {
 		fmt.Println("UP")
